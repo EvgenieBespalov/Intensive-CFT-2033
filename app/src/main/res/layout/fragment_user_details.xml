@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/padding_16"
+    android:paddingHorizontal="@dimen/padding_8">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/userDetailsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/userImageDetailsView"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nameExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <LinearLayout
+                        android:layout_weight="0.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints">
+                        <TextView
+                            android:id="@+id/userFullNameText"
+                            android:layout_weight="0.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="@string/userFullNameLabel"
+                            android:textSize="@dimen/user_list_item_text_size"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emailExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userEmailText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userEmailLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loginExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userLoginUserNameText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userLoginUsernameLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passwordExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userLoginPasswordText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userLoginPasswordLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/countryExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userLocationCountryText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userLocationCountryLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stateExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userLocationStateText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userLocationStateLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/streetExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userLocationStreetText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userLocationStreetLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phoneExplanation"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                    <TextView
+                        android:id="@+id/userPhoneText"
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/userPhoneLabel"
+                        android:textSize="@dimen/user_list_item_text_size"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

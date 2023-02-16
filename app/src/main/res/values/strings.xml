@@ -1,0 +1,40 @@
+<resources>
+	<string name="app_name">ShiftIntensive2023Sample</string>
+
+	<string name="unknown_error">Unknown error</string>
+
+	<!--	UserListFragment-->
+	<string name="user_list_title">User list</string>
+
+	<!--	UserDetailsFragment-->
+	<string name="nameExplanation">Name:</string>
+	<string name="emailExplanation">Email:</string>
+	<string name="loginExplanation">Login:</string>
+	<string name="passwordExplanation">Password:</string>
+	<string name="countryExplanation">Country:</string>
+	<string name="stateExplanation">State:</string>
+	<string name="streetExplanation">Street:</string>
+	<string name="phoneExplanation">Phone:</string>
+
+	<string name="userFullNameLabel">Mr. Master Master</string>
+	<string name="userEmailLabel">anon@email.com</string>
+	<string name="userLoginUsernameLabel">NameFirstNameLastLogin</string>
+	<string name="userLocationCountryLabel">userLocationCountry</string>
+	<string name="userLoginPasswordLabel">userLoginPasswordLabel</string>
+	<string name="userLocationStateLabel">userLocationStateLabel</string>
+	<string name="userLocationStreetLabel">userLocationStreetLabel</string>
+	<string name="userPhoneLabel">userPhoneLabel</string>
+
+	<!--	FilterFragment-->
+	<string name="filterCountResult">Number of users: 0</string>
+	<string name="filterGenderResult">Gender</string>
+
+	<string name="filterSearch">Search</string>
+	<string name="filterMaleRadioButton">Male</string>
+	<string name="filterFemaleRadioButton">Female</string>
+	<string name="filterAllRadioButton">All</string>
+
+	<string name="filterSeedLabel">Seed</string>
+	<string name="filterSeedPlaceholder">Enter seed (optional)</string>
+
+</resources>

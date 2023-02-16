@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vag_graph"
+    app:startDestination="@id/filterFragment">
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="ru.cft.shift2023winter.screen.FilterFragment"
+        android:label="FilterFragment" >
+        <action
+            android:id="@+id/action_filterFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="ru.cft.shift2023winter.screen.UserListFragment"
+        android:label="UserFragment" >
+        <argument
+            android:name="countOfUsers"
+            app:argType="integer"
+            android:defaultValue="5" />
+        <argument
+            android:name="selectedGender"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="seed"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_userFragment_to_userDetailsFragment2"
+            app:destination="@id/userDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="ru.cft.shift2023winter.screen.UserDetailsFragment"
+        android:label="UserDetailsFragment" >
+        <argument
+            android:name="userId"
+            android:defaultValue="a"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
